@@ -35,10 +35,7 @@ f til 5
 
 / ---------------------------------------------------------
 / execution is right to left:
-/ quicker. no need temp variable
 2 * 5 - 3
-/ parsing tree
-parse "2 * 5 - 3"
 (2 * 5) - 3
 
 / ---------------------------------------------------------
@@ -58,16 +55,10 @@ x
 / ---------------------------------------------------------
 / adverbs modify functions:
 x:(til 4;"hello")
-x
-count x
-count each x
 reverse x
 reverse each x
 
-/ each with get //, like vector instead of looping, which is slow
-/ apply each of the element on the right to the left with /:
 1 2 3 +/: 10 20
-/ apply each of the element on the left to the right \:
 1 2 3 +\: 10 20
 1 2 3 */: 10 20
 

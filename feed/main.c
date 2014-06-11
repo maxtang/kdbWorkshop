@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include <time.h>
+#include <unistd.h>
 #include "k.h"
 
 int h;
@@ -34,12 +34,9 @@ void maketrade(int x)
 int main() {
   h=khp("localhost",5010);
   int len=500;
-  struct timespec req = {0};
-  req.tv_sec = 0;
-  req.tv_nsec = 117 * 1000000L;
   while(len--){
     maketrade(1+roll(10));
-    nanosleep(&req,NULL);
+    usleep(107000);
   }
   return 0;
 }

@@ -1,11 +1,18 @@
 This feed matches the tickerplant in tutorial Startingkdb+.
 
-1. if necessary compile the feed (the distributed feed is for linux64):
+1. You can try using the distributed feed.exe.
+
+Note: the Microsoft Visual C++ 2005 Service Pack 1 Redistributable
+Package may be needed to run it. When tested on a machine without this,
+it gave an error "the application failed to initialize properly".
+The download file is vcredist_x86.exe.
+
+To recompile the feed, using mingw:
 
  - get k.h from http://kx.com/q/c/c
- - get c.o from the appropriate directory under http://kx.com/q
-   e.g. from http://kx.com/q/l64
- - run make
+ - get c.dll from the appropriate directory under http://kx.com/q
+   e.g. from http://kx.com/q/w32
+ - run make.bat
 
 2. start a q session and load the demo:
 

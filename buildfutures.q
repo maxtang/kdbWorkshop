@@ -9,7 +9,7 @@
 / requires write permission in target directories
 
 / config
-dst:`:db/futures       / database root
+dst:`:c:/q/db/futures  / database root
 / dsp:""               / optional database segment root
 / dsx:5                / number of segments
 
